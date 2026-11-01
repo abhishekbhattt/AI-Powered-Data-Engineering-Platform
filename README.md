@@ -1,7 +1,5 @@
 # Zomato AI Data Engineering — End-to-End Project
 
-> 🎥 **Video walkthrough:** [Watch the full project tutorial on YouTube](https://youtu.be/kYwaNMQ3XT8?si=Ge8ilVxkmGQS6iIg)
-
 A complete batch data pipeline that takes Zomato-style food delivery data from raw CSVs all the way to AI-powered analytics:
 
 **Zomato/Food Delivery Dataset → Amazon S3 → Snowflake → dbt → Airflow → AI (OpenAI)**
@@ -10,7 +8,7 @@ The dataset lands in an S3 data lake and flows into Snowflake through a storage 
 
 ![Architecture](docs/architecture.png)
 
-> 📂 **Dataset + project slides:** [Google Drive folder](https://drive.google.com/drive/folders/1FEnGWMHhHzzTUCZOw1-YnH2v3DMuM-rs?usp=sharing) — download the CSVs here and place them under `data/` (they're too large to commit to the repo).
+> **Note:** The dataset CSVs are too large to commit to the repo. Place them under `data/` locally before running the pipeline.
 
 ## What gets built
 
@@ -55,7 +53,7 @@ Python · Pandas · Amazon S3 · Snowflake · dbt (dbt-snowflake) · Apache Airf
 └── docs/architecture.png     # architecture diagram
 ```
 
-> `data/` (~2.3 GB of CSVs), logs, and dbt `target/` artifacts are intentionally not committed — get the dataset and slides from the [Google Drive folder](https://drive.google.com/drive/folders/1FEnGWMHhHzzTUCZOw1-YnH2v3DMuM-rs?usp=sharing).
+> `data/` (~2.3 GB of CSVs), logs, and dbt `target/` artifacts are intentionally not committed.
 
 ## How the pipeline works
 
